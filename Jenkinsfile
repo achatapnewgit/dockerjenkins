@@ -3,7 +3,10 @@ pipeline {
 	stages{
 
 		stage('build image'){
-			sh 'docker ps -a'
+			step{
+				sh 'docker ps -a'
+			}
+			
 		}
 	}
 
