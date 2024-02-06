@@ -5,6 +5,7 @@ pipeline {
 		stage('build image'){
 			steps{
 				sh 'docker ps -a'
+				sh 'docker build -t achatapnew/jenkinspython .'
 			}
 			
 		}
